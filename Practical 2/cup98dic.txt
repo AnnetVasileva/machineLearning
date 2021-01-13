@@ -231,7 +231,7 @@ DOMAIN                      DOMAIN/Cluster code. A nominal or symbolic field.
                               T=Town
                               R=Rural
                            
-DROP
+KEEP
                             2nd byte = Socio-Economic status of the neighborhood
                               1 = Highest SES
                               2 = Average SES
@@ -262,6 +262,7 @@ KEEP
 CHILD07                     Presence of Childern age 4-7
 CHILD12                     Presence of Childern age 8-12
 CHILD18                     Presence of Childern age 13-18
+
 DROP                          
 NUMCHLD                     NUMBER OF CHILDREN
 INCOME                      HOUSEHOLD INCOME
@@ -304,7 +305,7 @@ DATASRCE                    Source of Overlay Data
                             1 = MetroMail
                             2 = Polk
                             3 = Both
-KEEP                          
+DROP                         
 MALEMILI                    % Males active in the Military
 MALEVET                     % Males Veterans
 VIETVETS                    % Vietnam Vets
@@ -334,7 +335,7 @@ SOLIH                       SOLICITATION LIMIT CODE IN HOUSE
                             05 = five solicitations per year
                             06 = six solicitations per year
                             12 = twelve solicitations per year
-                           
+DROP                            
 MAJOR                       Major ($$) Donor Flag
                             _ = Not a Major Donor
                             X = Major Donor
@@ -518,7 +519,7 @@ RP2                         Percent Renters Paying >= $400 per Month
 RP3                         Percent Renters Paying >= $300 per Month
 RP4                         Percent Renters Paying >= $200 per Month
 
-DROP????
+DROP
 MSA                         MSA Code
 ADI                         ADI Code
 DMA                         DMA Code
@@ -840,8 +841,8 @@ ADATE_21                    Date the 95X1 promotion was mailed
 ADATE_22                    Date the 95XK promotion was mailed
 ADATE_23                    Date the 94FS promotion was mailed
 ADATE_24                    Date the 94NK promotion was mailed
-DROP
 RFA_2                       Donor's RFA status as of 97NK promotion date 
+KEEP and BREAK into pieces
 RFA_3                       Donor's RFA status as of 96NK promotion date  
 RFA_4                       Donor's RFA status as of 96TK promotion date  
 RFA_5                       Donor's RFA status as of 96SK promotion date  

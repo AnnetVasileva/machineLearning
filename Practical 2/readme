@@ -1,5 +1,10 @@
 readme
 
 
-Link for KDD Cup 1998 Dataset (Google Drive): https://drive.google.com/file/d/11N8fZkVVeKt1bijMPXwo3Q3aVOPc1CgN/view?usp=sharing
+Link for KDD Cup 1998 Training Dataset in .csv (Google Drive): https://drive.google.com/file/d/11N8fZkVVeKt1bijMPXwo3Q3aVOPc1CgN/view?usp=sharing
 
+Link to the Original Website for training and validation sets in zip : https://kdd.ics.uci.edu/databases/kddcup98/kddcup98.html
+You can also find all information about the data here.
+
+First download the data, you need the data to be in a csv format. Afterwards use Preprocessing to correspondingly format the data and get a pickle.
+The pickle can be used to further train the models.

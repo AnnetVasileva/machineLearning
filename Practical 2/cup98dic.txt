@@ -388,6 +388,7 @@ LIFESRC                     LIFE STYLE DATA SOURCE
 
 --------------------------  -------------------------------------------------
                            
+KEEP
 PEPSTRFL                    Indicates PEP Star RFA Status
                             blank = Not considered to be a PEP Star
                             'X'   = Has PEP Star RFA Status
@@ -406,6 +407,8 @@ POP90C2                     Percent Population Outside Urbanized Area
 POP90C3                     Percent Population Inside Rural Area
 POP90C4                     Percent Male
 POP90C5                     Percent Female
+
+DROP
 ETH1                        Percent White
 ETH2                        Percent Black
 ETH3                        Percent Native American
@@ -422,7 +425,10 @@ ETH13                       Percent Mexican
 ETH14                       Percent Puerto Rican
 ETH15                       Percent Cuban
 ETH16                       Percent Other Hispanic
+
 AGE901                      Median Age of Population
+
+DROP
 AGE902                      Median Age of Adults 18 or Older
 AGE903                      Median Age of Adults 25 or Older
 AGE904                      Average Age of Population
@@ -457,8 +463,12 @@ MARR1                       Percent Married
 MARR2                       Percent Separated or Divorced
 MARR3                       Percent Widowed
 MARR4                       Percent Never Married
+
+KEEP
 HHP1                        Median Person Per Household
 HHP2                        Average Person Per Household
+
+DROP
 DW1                         Percent Single Unit Structure
 DW2                         Percent Detached Single Unit Structure
 DW3                         Percent Duplex Structure
@@ -468,10 +478,14 @@ DW6                         Percent Housing Units in 5+ Unit Structure
 DW7                         Percent Group Quarters
 DW8                         Percent Institutional Group Quarters
 DW9                         Non-Institutional Group Quarters
+
+KEEP
 HV1                         Median Home Value in hundreds
 HV2                         Average Home Value in hundreds
 HV3                         Median Contract Rent in hundreds
 HV4                         Average Contract Rent in hundreds
+
+DROP
 HU1                         Percent Owner Occupied Housing Units
 HU2                         Percent Renter Occupied Housing Units
 HU3                         Percent Occupied Housing Units
@@ -489,6 +503,8 @@ HHD9                        Percent Female Householder w/ Child
 HHD10                       Percent Single Male Householder
 HHD11                       Percent Single Female Householder
 HHD12                       Percent Households w/ Non-Family Living Arrangements
+
+KEEP
 ETHC1                       Percent White < Age 15
 ETHC2                       Percent White Age 15 - 59
 ETHC3                       Percent White Age 60+
@@ -501,6 +517,8 @@ HVP3                        Percent Home Value >= $100,000
 HVP4                        Percent Home Value >= $75,000
 HVP5                        Percent Home Value >= $50,000
 HVP6                        Percent Home Value >= $300,000
+
+DROP
 HUR1                        $ 1 or 2 Room Housing Units
 HUR2                        Percent >= 6 Room Housing Units
 RHP1                        Median Number of Rooms per Housing Unit
@@ -525,7 +543,7 @@ ADI                         ADI Code
 DMA                         DMA Code
 
 
-
+KEEP
 IC1                         Median Household Income in hundreds
 IC2                         Median Family Income in hundreds
 IC3                         Average Household Income in hundreds
@@ -540,6 +558,8 @@ IC11                        Percent Households w/ Income $75,000 - $99,999
 IC12                        Percent Households w/ Income $100,000 - $124,999
 IC13                        Percent Households w/ Income $125,000 - $149,999
 IC14                        Percent Households w/ Income >= $150,000
+
+DROP
 IC15                        Percent Families w/ Income < $15,000
 IC16                        Percent Families w/ Income $15,000 - $24,999
 IC17                        Percent Families w/ Income $25,000 - 34,999
@@ -549,6 +569,8 @@ IC20                        Percent Families w/ Income $75,000 - $99,999
 IC21                        Percent Families w/ Income $100,000 - $124,999
 IC22                        Percent Families w/ Income $125,000 - $149,999
 IC23                        Percent Families w/ Income >= $150,000
+
+KEEP
 HHAS1                       Percent Households on Social Security
 HHAS2                       Percent Households on Public Assistance
 HHAS3                       Percent Households w/ Interest, Rental or Dividend Income
@@ -594,6 +616,8 @@ OCC10                       Percent Craftsmen, Precision, Repair
 OCC11                       Percent Operatives, Machine
 OCC12                       Percent Transportation
 OCC13                       Percent Laborers, Handlers, Helpers
+
+DROP
 EIC1                        Percent Employed in Agriculture
 EIC2                        Percent Employed in Mining
 EIC3                        Percent Employed in Construction
@@ -617,7 +641,12 @@ OEDC4                       Percent Self Employed
 OEDC5                       Percent Private Profit Wage or Salaried Worker
 OEDC6                       Percent Private Non-Profit Wage or Salaried Worker
 OEDC7                       Percent Unpaid Family Workers
+
+
+KEEP
 EC1                         Median Years of School Completed by Adults 25+
+
+DROP
 EC2                         Percent Adults 25+ Grades 0-8
 EC3                         Percent Adults 25+ w/ some High School
 EC4                         Percent Adults 25+ Completed High School or Equivalency
@@ -655,6 +684,8 @@ ANC12                       Percent Russian Ancestry
 ANC13                       Percent Scottish Ancestry
 ANC14                       Percent Swedish Ancestry
 ANC15                       Percent Ukranian Ancestry
+
+KEEP
 POBC1                       Percent Foreign Born
 POBC2                       Percent Born in State of Residence
 LSC1                        Percent English Only Speaking
@@ -666,6 +697,8 @@ VOC2                        Percent Households w/ 2+ Vehicles
 VOC3                        Percent Households w/ 3+ Vehicles
 HC1                         Percent Median Length of Residence
 HC2                         Percent Median Age of Occupied Dwellings in years
+
+DROP
 HC3                         Percent Owner Occupied Structures Built Since 1989
 HC4                         Percent Owner Occupied Structures Built Since 1985
 HC5                         Percent Owner Occupied Structures Built Since 1980
@@ -685,6 +718,8 @@ HC18                        Percent Housing Units w/ Well Water Source
 HC19                        Percent Housing Units w/ Public Sewer Source
 HC20                        Percent Housing Units w/ Complete Plumbing Facilities
 HC21                        Percent Housing Units w/ Telephones
+
+KEEP
 MHUC1                       Median Homeowner Cost w/ Mortgage per Month dollars
 MHUC2                       Median Homeowner Cost w/out Mortgage per Month dollars
 AC1                         Percent Adults Age 55-59
@@ -960,11 +995,13 @@ TIMELAG                     Number of months between first and second gift
 AVGGIFT                     Average dollar amount of gifts to date           
 
 --------------------------  -------------------------------------------------
-KEEP NEXT 3
+DROP
 CONTROLN                    Control number (unique record identifier)
 
+KEEP
 TARGET_B                    Target Variable: Binary Indicator for Response to 
-                            97NK Mailing
+
+WOLL NOT BE NEEDED                            97NK Mailing
 TARGET_D                    Target Variable: Donation Amount (in $) associated 
                             with the Response to 97NK Mailing
 DROP
